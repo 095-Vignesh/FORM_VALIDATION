@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: linear-gradient(to right, rgb(186, 229, 98), violet, yellowgreen, orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgb(232, 207, 207);
+    box-shadow: 3px 4px 5px 5px skyblue;
+    width: 500px;
+
+
+}
+
+.header {
+    color: white;
+    text-align: center;
+    background-color: lightsalmon;
+    padding: 20px 40px;
+    border-bottom: 3px solid rgb(148, 46, 8);
+}
+
+.header h2 {
+    text-shadow: 3px 4px 3px hsl(115, 95%, 52%);
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+
+}
+
+.form-group input {
+    border: solid 2px white;
+    display: block;
+    font-size: .8rem;
+    width: 100%;
+    padding: 8px;
+
+}
+
+.form input::placeholder {
+    color: blue;
+}
+
+.form-group i {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+
+}
+
+.form span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-style: iitalic;
+    visibility: hidden;
+
+}
+
+.form-group span {
+    color: red;
+    visibility: visible;
+}
+
+.form #submit {
+    background-color: #530fe7;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+
+}
+
+.form #submit:hover {
+    background-color: skyblue;
+}
+
+.form-group.success input {
+    border-color: green;
+}
+.form-group.success span{
+    visibility: hidden;
+}
+
+.form-group.error input {
+    border-color: red;
+}
+
+.form-group.success i.ion-ios-checkmark {
+    visibility: visible;
+    color: green;
+}
+
+.form-group.error i.ion-android-alert {
+    visibility: visible;
+    color: red;
+}
